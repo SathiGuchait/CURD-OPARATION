@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOG IN</title>
+  <style>
+    body {
+
+      border: 5px;
+      padding: 5px;
+      background: linear-gradient(110deg, #bdf168 60%, #e0f85a 60%);
+      color: rgb(9, 10, 12);
+    }
+
+    .main_div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+    }
+
+    .title {
+      justify-content: center;
+      background: linear-gradient(110deg, #6cb4f8 60%, #7fbffc 60%);
+      color: black;
+      padding-left: 20px;
+      border-color: rgb(9, 9, 15);
+      border-radius: 10%;
+      height: 350px;
+      width: 250px;
+      padding-left: 50px;
+
+    }
+
+    #login {
+      padding-left: 50px;
+    }
+
+    #submit {
+      width: 90px;
+      cursor: pointer;
+      text-align: center;
+      background-color: rgb(9, 223, 9);
+    }
+
+    .submit {
+      padding-left: 50px;
+    }
+
+    /*input:hover,a:hover{
+        background-color:rgb(108, 253, 71)
+       }
+    .ok {
+      background-color: crimson;
+      color: aliceblue;
+      padding: 3% 10%;
+      border-radius: 50%;
+      margin: 15%;
+    }
+   
+
+  
+    #myfrom {
+      width: 250px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%)scale(0.1);
+      background-color: rgb(254, 255, 186);
+      text-align: center;
+      padding: 5px;
+      border-radius: 6px;
+      position: absolute;
+      visibility: hidden;
+      transition: 0.4s, top 0.4s;
+    }
+
+    .open-popup {
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%)scale(1);
+    }*/
+    #delete{
+      color: red;
+    }
+    #delete :hover{
+      background-color: rgb(241, 11, 11);
+    }
+</style>
+
+</head>
+
+<body>
+  <div class="main_div">
+    <div class="title">
+      <form action="/login" method="post">
+        <h2 id="login">LOGIN</h2>
+        <div id="in">
+          <input type="email" placeholder="Email addrass" name="email" required>
+        </div><br><br>
+        <div id="in">
+          <input type="password" placeholder="Password" name="password" required>
+        </div><br>
+        <!--div id="option_div">
+                   <div class="check_box">
+                   <input type="checkbox">
+                    <span>Remember me</span>
+                   </div>
+                </div><br-->
+        <div id="forget_div">
+          <a href="./forgate.html">Forgot password?</a>
+        </div><br>
+
+        <div class="submit">
+          <input type="submit" id="submit" value="Login">
+        </div><br>
+        <div class="sign_up">
+          Not a member? <a href="./index.html">Signup now</a>
+        </div><br><br>
+        <div id="delete">
+         Account delete? <a href="./delete.html">delete account</a>
+        </div>
+      </form>
+      <!--div class="myfrom"id="myfrom">
+              <h2> Successfull ! </h2>
+             <p> your login is Successfull</p>
+             <button class="ok" onclick="closepopup()" id="ok">OK</button>
+            </div-->
+    </div>
+  </div>
+
+
+  <!--script>
+    document.cookie 
+
+  </script-->
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FROM</title>
+  <style>
+    body {
+      border: 5px;
+      padding: 5px;
+      background: linear-gradient(110deg, #f5c842 60%, #ffed4b 60%);
+      color: rgb(9, 10, 12);
+    }
+
+    #head {
+      color: blue;
+      /*text-align: center;*/
+      padding-left: 30px;
+      padding-top: 8px;
+    }
+
+    .a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .b {
+      justify-content: center;
+      background: linear-gradient(110deg, #079999 60%, #08bba3 60%);
+      padding-left: 50px;
+      border-color: rgb(9, 9, 15);
+      border-radius: 10%;
+      height: 500px;
+      width: 330px;
+
+    }
+
+    #submit {
+      background-color: #05e90d;
+      /* Green */
+
+      color: rgb(12, 11, 11);
+      padding: 5px;
+      text-align: center;
+      /*text-decoration: none;
+          display: inline-block;*/
+      font-size: 15px;
+      border-radius: 8px;
+      width: 120px;
+      cursor: pointer;
+
+    }
+
+    /*input:hover{
+        background-color:rgb(241, 144, 144)
+       }*/
+    div.c {
+      padding-left: 50px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="a">
+    <div class="b">
+      <h2 id="head">REGISTRASSION</h2>
+        <form action="/register" method="POST" enctype="multipart/form-data" >
+
+        <label for="name">NAME*:</label><br>
+        <input type="text" id="name" value="" placeholder="Name" name="name" /><br><br>
+        <label for="email">EMAIL ADDRESS*</label><br>
+        <input type="email" id="email" value="" placeholder="email addrass" name="email" /><br><br>
+        <label for="phone">PHONE NUMBER*:</label><br>
+        <input type="text" id="phone" value="" placeholder="phone number" name="phone" /><br><br>
+        
+        <label for="myfile">SELECT PHOTO*:</label><br>
+        <input type="file" id="photo" name="photo" ><br>
+
+        <label for="password">PASSWORD*:</label><br>
+        <input type="password" id="password" value="" placeholder="password" name="password" /><br><br>
+        <label for="cpassword">CONFIRM PASSWORD*:</label><br>
+        <input type="password" id="cpassword" value="" placeholder="confirm password" name="cpassword" required><br><br>
+        <div class="c">
+          <input type="submit" id="submit" value="submit" />
+        </div>
+      </from>
+      <div>If already register,<a href="./login.html"> LOGIN</a></div>
+    </div>
+  </div>
+  <script>
+   // <label for="myfile">SELECT PHOTO*:</label><br>
+    // <input type="file" id="photo" name="myfile" ><br>
+
+    /*post request
+      document.getElementById("submit").addEventListener("click",function(event){
+         event.preventDefault();
+
+        fetch('./home/sathi/Desktop/java/from/read.txt/posts', {
+          method: 'POST',
+          body: new FormData(document.getElementById("from")),
+          }),
+          headers; {
+            'Content-type'; 'application/x-www-from-urlencoded';
+          }
+       })
+         .then((response) => response.json())
+         .then((json) => console.log(json));*/
+
+
+
+  </script>
+</body>
+
+</html>

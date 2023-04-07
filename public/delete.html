@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete account</title>
+   <style> 
+     body {
+        border: 5px;
+        padding: 5px;
+        background: linear-gradient(110deg, #34b68f 60%, #50cea4 60%);
+        color: rgb(9, 10, 12);
+      }
+  
+      #fr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+  
+      #from {
+        justify-content: center;
+        background: linear-gradient(110deg, #dbd467 60%, #e3eb72 60%);
+        color: black;
+        padding-left: 20px;
+        border-color: rgb(9, 9, 15);
+        border-radius: 10%;
+        height: 200px;
+        width: 250px;
+        padding-left: 50px;
+        padding-top: 10px;
+      }
+  
+      #submit {
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+        text-align: center;
+        background-color: rgb(233, 43, 10);
+        color: antiquewhite;
+        border-radius: 8px;
+  
+      }
+  
+      .submit {
+        padding-left: 50px;
+  
+      }
+    </style>
+</head>
+
+<body>
+
+    <div id="fr">
+        <div id="from">
+            <form action="/delete" method="post">
+                <h2>Delete Account</h2>
+                <input type="email" name="email" placeholder="Email addrass" required> <br><br>
+                <input type="password" name="password" placeholder="password" required><br> <br>
+                <div class="submit">
+                    <input type="submit" id="submit" value="Delete">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

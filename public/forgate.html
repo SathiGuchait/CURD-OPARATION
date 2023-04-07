@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORGATE PASSWORDt</title>
+
+  <style>
+    body {
+      border: 5px;
+      padding: 5px;
+      background: linear-gradient(110deg, #6cb4f8 60%, #7fbffc 60%);
+      color: rgb(9, 10, 12);
+    }
+
+    #fr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #from {
+      justify-content: center;
+      background: linear-gradient(110deg, #4bf174 60%, #a5f371 60%);
+      color: black;
+      padding-left: 20px;
+      border-color: rgb(9, 9, 15);
+      border-radius: 10%;
+      height: 200px;
+      width: 250px;
+      padding-left: 50px;
+      padding-top: 10px;
+    }
+
+    #submit {
+      width: 80px;
+      cursor: pointer;
+      text-align: center;
+      background-color: rgb(34, 34, 247);
+      color: antiquewhite;
+
+    }
+
+    .submit {
+      padding-left: 50px;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div id="fr">
+    <div id="from">
+      <form action="/forgot" method="post">
+        <h2>forgote password</h2>
+        <input type="email" name="email" placeholder="Email addrass" required> <br><br>
+        <input type="password" name="password" placeholder="Type new password" required><br> <br>
+        <div class="submit">
+          <input type="submit" id="submit" value="Continue">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
